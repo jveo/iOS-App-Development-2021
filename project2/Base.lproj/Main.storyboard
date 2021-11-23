@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cES-Om-Zfe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -15,23 +15,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4e-I5-DcO">
-                                <rect key="frame" x="107" y="100" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4e-I5-DcO">
+                                <rect key="frame" x="107" y="56" width="200" height="100"/>
+                                <state key="normal" image="US"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efq-ii-fQg">
-                                <rect key="frame" x="107" y="230" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efq-ii-fQg">
+                                <rect key="frame" x="107" y="186" width="200" height="100"/>
+                                <state key="normal" image="US"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcS-N1-gkI">
-                                <rect key="frame" x="107" y="350" width="200" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcS-N1-gkI">
+                                <rect key="frame" x="107" y="316" width="200" height="100"/>
+                                <state key="normal" image="US"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RcS-N1-gkI" firstAttribute="centerX" secondItem="Efq-ii-fQg" secondAttribute="centerX" id="1dr-kE-g0N"/>
+                            <constraint firstItem="RcS-N1-gkI" firstAttribute="top" secondItem="Efq-ii-fQg" secondAttribute="bottom" constant="30" id="7pw-Tg-kV3"/>
+                            <constraint firstItem="W4e-I5-DcO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MQH-qy-9IS"/>
+                            <constraint firstItem="Efq-ii-fQg" firstAttribute="top" secondItem="W4e-I5-DcO" secondAttribute="bottom" constant="30" id="a6I-9M-gL1"/>
+                            <constraint firstItem="Efq-ii-fQg" firstAttribute="centerX" secondItem="W4e-I5-DcO" secondAttribute="centerX" id="ld1-VP-AvS"/>
+                            <constraint firstItem="W4e-I5-DcO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="wFU-5u-NAh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="gxS-DX-92v"/>
@@ -40,23 +45,8 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="113.83928571428571"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="w1y-BZ-UAp">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cES-Om-Zfe" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lsg-0a-iNC">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5uS-Mh-XLI"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="p8N-mr-ORI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="US" width="200" height="100"/>
+    </resources>
 </document>
